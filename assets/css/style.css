@@ -1,0 +1,109 @@
+/* Remove Default Styles and Replace General Styles */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Apply Styles to Header*/
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+/*End Header Styles*/
+
+/*Apply Hero Styles*/
+.hero {
+    background-image: url("../images/SpaceHero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 80%;
+}
+
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 100px;
+}
+/*End Hero Styles*/
+
+/*Apply Styles to Sections*/
+.work img {
+    filter: blur(2px);
+    max-width: 400px;
+    max-height: 300px;
+    border: 3px solid var(--tertiary-color);
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*End Styles to Sections*/
+
+/* Apply Styles to Footer */
+footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+/* End Footer Styles */
