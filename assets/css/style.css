@@ -80,6 +80,30 @@ header nav ul li a:hover {
 /*End Hero Styles*/
 
 /*Apply Styles to Sections*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section h2 {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .work img {
     filter: blur(2px);
     max-width: 400px;
@@ -87,9 +111,10 @@ header nav ul li a:hover {
     border: 3px solid var(--tertiary-color);
 }
 
-.work {
+.work article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 /*End Styles to Sections*/
 
